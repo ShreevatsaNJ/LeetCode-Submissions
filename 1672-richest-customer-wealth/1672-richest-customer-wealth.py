@@ -6,10 +6,10 @@ class Solution:
             for j in accounts[i]:
                 temp+=j
             lst.append(temp)
-        max=lst[0]  
+        max_wealth=lst[0]  
         for i in range(1,len(lst)):
-            if lst[i]>max:
-                max=lst[i]
-        return max
+            if lst[i]>max_wealth:
+                max_wealth=lst[i]
+        return max_wealth
 
                 

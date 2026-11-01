@@ -5,9 +5,9 @@ class Solution:
         for i in range(1,len(prices)):
             if prices[i]<=min_value:
                 min_value=prices[i]
-            value=prices[i]-min_value
-            if value>=max_profit:
-                max_profit=value
+            stock_value=prices[i]-min_value
+            if stock_value>=max_profit:
+                max_profit=stock_value
         if max_profit>0:
             return max_profit  
         else:

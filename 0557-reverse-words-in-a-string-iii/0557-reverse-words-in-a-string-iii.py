@@ -6,7 +6,7 @@ class Solution:
             temp=i
             arr=list(temp)   
             l=0
-            r=len("".join(arr))-1
+            r=len(arr)-1
             while(l<=r):
                 arr[l],arr[r]=arr[r],arr[l]
                 l+=1

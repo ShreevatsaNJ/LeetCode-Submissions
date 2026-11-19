@@ -1,12 +1,12 @@
 class Solution:
     def repeatedCharacter(self, s: str) -> str:
-        count={}
+        total={}
         for i in s:
-            if i in count:
-                count[i]+=1
-                if count[i]>=2:
+            if i in total:
+                total[i]+=1
+                if total[i]>=2:
                     return i
                     break
             else:
-                count[i]=1
+                total[i]=1
             
